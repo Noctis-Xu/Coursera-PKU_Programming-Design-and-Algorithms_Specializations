@@ -27,40 +27,40 @@
     <ClCompile Include="Calendar.cpp">
       <Filter>Source Files\C程序设计进阶_第2周综合编程练习（1）</Filter>
     </ClCompile>
-    <ClCompile Include="test.cpp">
-      <Filter>Source Files\C程序设计进阶_第2周综合编程练习（1）</Filter>
-    </ClCompile>
-    <ClCompile Include="Tomorrow never knows.cpp">
-      <Filter>Source Files\C程序设计进阶_第2周综合编程练习（1）</Filter>
-    </ClCompile>
-    <ClCompile Include="发票统计.cpp">
-      <Filter>Source Files\C程序设计进阶_第2周综合编程练习（1）</Filter>
-    </ClCompile>
-    <ClCompile Include="流感传染.cpp">
-      <Filter>Source Files\C程序设计进阶_第2周综合编程练习（1）</Filter>
-    </ClCompile>
-    <ClCompile Include="四大湖.cpp">
-      <Filter>Source Files\C程序设计进阶_第2周综合编程练习（1）</Filter>
-    </ClCompile>
-    <ClCompile Include="细菌实验分组.cpp">
-      <Filter>Source Files\C程序设计进阶_第2周综合编程练习（1）</Filter>
-    </ClCompile>
-    <ClCompile Include="寻找下标.cpp">
-      <Filter>Source Files\C程序设计进阶_第2周综合编程练习（1）</Filter>
-    </ClCompile>
-    <ClCompile Include="1 单词翻转.cpp">
-      <Filter>Source Files\C程序设计进阶_第3周递归编程练习</Filter>
-    </ClCompile>
-    <ClCompile Include="2 角谷猜想.cpp">
-      <Filter>Source Files\C程序设计进阶_第3周递归编程练习</Filter>
-    </ClCompile>
-    <ClCompile Include="3 排队游戏.cpp">
-      <Filter>Source Files\C程序设计进阶_第3周递归编程练习</Filter>
-    </ClCompile>
-    <ClCompile Include="4 扩号匹配问题.cpp">
-      <Filter>Source Files\C程序设计进阶_第3周递归编程练习</Filter>
-    </ClCompile>
     <ClCompile Include="C_5_1 计算矩阵边缘元素之和.cpp">
+      <Filter>Source Files\C程序设计进阶_第5周指针与二维数组练习</Filter>
+    </ClCompile>
+    <ClCompile Include="C_2_1 寻找下标.cpp">
+      <Filter>Source Files\C程序设计进阶_第2周综合编程练习（1）</Filter>
+    </ClCompile>
+    <ClCompile Include="C_2_2 四大湖.cpp">
+      <Filter>Source Files\C程序设计进阶_第2周综合编程练习（1）</Filter>
+    </ClCompile>
+    <ClCompile Include="C_2_3 发票统计.cpp">
+      <Filter>Source Files\C程序设计进阶_第2周综合编程练习（1）</Filter>
+    </ClCompile>
+    <ClCompile Include="C_2_4 Tomorrow never knows.cpp">
+      <Filter>Source Files\C程序设计进阶_第2周综合编程练习（1）</Filter>
+    </ClCompile>
+    <ClCompile Include="C_2_5 细菌实验分组.cpp">
+      <Filter>Source Files\C程序设计进阶_第2周综合编程练习（1）</Filter>
+    </ClCompile>
+    <ClCompile Include="C_2_6 流感传染.cpp">
+      <Filter>Source Files\C程序设计进阶_第2周综合编程练习（1）</Filter>
+    </ClCompile>
+    <ClCompile Include="C_3_1 单词翻转.cpp">
+      <Filter>Source Files\C程序设计进阶_第3周递归编程练习</Filter>
+    </ClCompile>
+    <ClCompile Include="C_3_2 角谷猜想.cpp">
+      <Filter>Source Files\C程序设计进阶_第3周递归编程练习</Filter>
+    </ClCompile>
+    <ClCompile Include="C_3_3 排队游戏.cpp">
+      <Filter>Source Files\C程序设计进阶_第3周递归编程练习</Filter>
+    </ClCompile>
+    <ClCompile Include="C_3_4 扩号匹配问题.cpp">
+      <Filter>Source Files\C程序设计进阶_第3周递归编程练习</Filter>
+    </ClCompile>
+    <ClCompile Include="C_5_2 二维数组右上左下遍历.cpp">
       <Filter>Source Files\C程序设计进阶_第5周指针与二维数组练习</Filter>
     </ClCompile>
   </ItemGroup>
