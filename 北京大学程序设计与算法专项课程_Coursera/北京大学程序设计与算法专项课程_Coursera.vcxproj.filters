@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\C程序设计进阶_第2周综合编程练习（1）">
+      <UniqueIdentifier>{70eb208c-8cfc-4273-b865-6b8b7fac7be8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\C程序设计进阶_第3周递归编程练习">
+      <UniqueIdentifier>{81230474-3bfb-456b-9637-55f851f8046e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\C程序设计进阶_第5周指针与二维数组练习">
+      <UniqueIdentifier>{0ddcd2e1-de8b-47b1-9d93-4bc548e92eca}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Calendar.cpp">
+      <Filter>Source Files\C程序设计进阶_第2周综合编程练习（1）</Filter>
+    </ClCompile>
+    <ClCompile Include="test.cpp">
+      <Filter>Source Files\C程序设计进阶_第2周综合编程练习（1）</Filter>
+    </ClCompile>
+    <ClCompile Include="Tomorrow never knows.cpp">
+      <Filter>Source Files\C程序设计进阶_第2周综合编程练习（1）</Filter>
+    </ClCompile>
+    <ClCompile Include="发票统计.cpp">
+      <Filter>Source Files\C程序设计进阶_第2周综合编程练习（1）</Filter>
+    </ClCompile>
+    <ClCompile Include="流感传染.cpp">
+      <Filter>Source Files\C程序设计进阶_第2周综合编程练习（1）</Filter>
+    </ClCompile>
+    <ClCompile Include="四大湖.cpp">
+      <Filter>Source Files\C程序设计进阶_第2周综合编程练习（1）</Filter>
+    </ClCompile>
+    <ClCompile Include="细菌实验分组.cpp">
+      <Filter>Source Files\C程序设计进阶_第2周综合编程练习（1）</Filter>
+    </ClCompile>
+    <ClCompile Include="寻找下标.cpp">
+      <Filter>Source Files\C程序设计进阶_第2周综合编程练习（1）</Filter>
+    </ClCompile>
+    <ClCompile Include="1 单词翻转.cpp">
+      <Filter>Source Files\C程序设计进阶_第3周递归编程练习</Filter>
+    </ClCompile>
+    <ClCompile Include="2 角谷猜想.cpp">
+      <Filter>Source Files\C程序设计进阶_第3周递归编程练习</Filter>
+    </ClCompile>
+    <ClCompile Include="3 排队游戏.cpp">
+      <Filter>Source Files\C程序设计进阶_第3周递归编程练习</Filter>
+    </ClCompile>
+    <ClCompile Include="4 扩号匹配问题.cpp">
+      <Filter>Source Files\C程序设计进阶_第3周递归编程练习</Filter>
+    </ClCompile>
+    <ClCompile Include="C_5_1 计算矩阵边缘元素之和.cpp">
+      <Filter>Source Files\C程序设计进阶_第5周指针与二维数组练习</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

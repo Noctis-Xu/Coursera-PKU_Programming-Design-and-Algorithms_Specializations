@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "北京大学程序设计与算法专项课程_Coursera", "北京大学程序设计与算法专项课程_Coursera\北京大学程序设计与算法专项课程_Coursera.vcxproj", "{730FDE7C-A771-4576-B975-047F7B259AEE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{730FDE7C-A771-4576-B975-047F7B259AEE}.Debug|x64.ActiveCfg = Debug|x64
+		{730FDE7C-A771-4576-B975-047F7B259AEE}.Debug|x64.Build.0 = Debug|x64
+		{730FDE7C-A771-4576-B975-047F7B259AEE}.Debug|x86.ActiveCfg = Debug|Win32
+		{730FDE7C-A771-4576-B975-047F7B259AEE}.Debug|x86.Build.0 = Debug|Win32
+		{730FDE7C-A771-4576-B975-047F7B259AEE}.Release|x64.ActiveCfg = Release|x64
+		{730FDE7C-A771-4576-B975-047F7B259AEE}.Release|x64.Build.0 = Release|x64
+		{730FDE7C-A771-4576-B975-047F7B259AEE}.Release|x86.ActiveCfg = Release|Win32
+		{730FDE7C-A771-4576-B975-047F7B259AEE}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E4A7194F-90BA-423A-A56B-0A8576204472}
+	EndGlobalSection
+EndGlobal
