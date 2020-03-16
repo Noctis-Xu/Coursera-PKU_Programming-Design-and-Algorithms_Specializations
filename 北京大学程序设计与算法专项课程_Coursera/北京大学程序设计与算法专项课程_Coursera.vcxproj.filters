@@ -63,5 +63,11 @@
     <ClCompile Include="C_5_2 二维数组右上左下遍历.cpp">
       <Filter>Source Files\C程序设计进阶_第5周指针与二维数组练习</Filter>
     </ClCompile>
+    <ClCompile Include="C_5_3 文字排版.cpp">
+      <Filter>Source Files\C程序设计进阶_第5周指针与二维数组练习</Filter>
+    </ClCompile>
+    <ClCompile Include="test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
