@@ -22,6 +22,9 @@
     <Filter Include="Source Files\C程序设计进阶_第5周指针与二维数组练习">
       <UniqueIdentifier>{0ddcd2e1-de8b-47b1-9d93-4bc548e92eca}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\C程序设计进阶_第6周综合编程练习（2）">
+      <UniqueIdentifier>{195ea118-7b86-43fb-8cd1-efbe27bbb93e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Calendar.cpp">
@@ -68,6 +71,15 @@
     </ClCompile>
     <ClCompile Include="test.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C_6_1 分配病房.cpp">
+      <Filter>Source Files\C程序设计进阶_第6周综合编程练习（2）</Filter>
+    </ClCompile>
+    <ClCompile Include="C_6_2 配对碱基链.cpp">
+      <Filter>Source Files\C程序设计进阶_第6周综合编程练习（2）</Filter>
+    </ClCompile>
+    <ClCompile Include="C_6_3 寻找山顶.cpp">
+      <Filter>Source Files\C程序设计进阶_第6周综合编程练习（2）</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
