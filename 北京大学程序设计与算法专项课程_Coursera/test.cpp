@@ -9,5 +9,7 @@
 using namespace std;
 
 int main() {
-	cout << __DATE__ << endl;
+	int i = 6,b;
+	b = i / 10;
+	cout << b;
 }

@@ -25,6 +25,9 @@
     <Filter Include="Source Files\C程序设计进阶_第6周综合编程练习（2）">
       <UniqueIdentifier>{195ea118-7b86-43fb-8cd1-efbe27bbb93e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\C程序设计进阶_期末考试">
+      <UniqueIdentifier>{dfade9b2-b70f-4a0e-8103-3467c9b9684c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Calendar.cpp">
@@ -80,6 +83,15 @@
     </ClCompile>
     <ClCompile Include="C_6_3 寻找山顶.cpp">
       <Filter>Source Files\C程序设计进阶_第6周综合编程练习（2）</Filter>
+    </ClCompile>
+    <ClCompile Include="C_期末_1 含k个3的数.cpp">
+      <Filter>Source Files\C程序设计进阶_期末考试</Filter>
+    </ClCompile>
+    <ClCompile Include="C_期末_2 字符串中次数第2多的字母.cpp">
+      <Filter>Source Files\C程序设计进阶_期末考试</Filter>
+    </ClCompile>
+    <ClCompile Include="C_期末_3 运算符判定.cpp">
+      <Filter>Source Files\C程序设计进阶_期末考试</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
