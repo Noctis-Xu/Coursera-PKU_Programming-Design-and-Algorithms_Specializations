@@ -93,5 +93,11 @@
     <ClCompile Include="C_期末_3 运算符判定.cpp">
       <Filter>Source Files\C程序设计进阶_期末考试</Filter>
     </ClCompile>
+    <ClCompile Include="C_期末_4 寻找平面上的极大点.cpp">
+      <Filter>Source Files\C程序设计进阶_期末考试</Filter>
+    </ClCompile>
+    <ClCompile Include="C_期末_5 走出迷宫.cpp">
+      <Filter>Source Files\C程序设计进阶_期末考试</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
