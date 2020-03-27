@@ -8,8 +8,14 @@
 
 using namespace std;
 
+
 int main() {
-	int i = 6,b;
-	b = i / 10;
-	cout << b;
+	char a[10] = "hello";
+	char* p = a;
+	p[1] = 'c';
+	cout << a << endl;
+	char* pc = p;
+	pc[2] = 'd';
+	cout << a << endl;
+
 }
