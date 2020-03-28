@@ -10,12 +10,8 @@ using namespace std;
 
 
 int main() {
-	char a[10] = "hello";
-	char* p = a;
-	p[1] = 'c';
-	cout << a << endl;
-	char* pc = p;
-	pc[2] = 'd';
-	cout << a << endl;
+	if (0 + 2 > 2) {
+		cout << 1 << endl;
+	}
 
 }
