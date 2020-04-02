@@ -96,16 +96,19 @@
     <ClCompile Include="C_期末_4 寻找平面上的极大点.cpp">
       <Filter>Source Files\C程序设计进阶_期末考试</Filter>
     </ClCompile>
-    <ClCompile Include="C_期末_5 走出迷宫v1 考虑要点6和7.cpp">
+    <ClCompile Include="C_期末_5 走出迷宫v2.1 取消了v2递归函数中的p_temp%28成功，速度一般，占用内存小于v2%29.cpp">
       <Filter>Source Files\C程序设计进阶_期末考试</Filter>
     </ClCompile>
-    <ClCompile Include="C_期末_5 走出迷宫 考虑要点7.cpp">
+    <ClCompile Include="C_期末_5 走出迷宫v2 考虑要点6%28成功，速度较慢%29.cpp">
       <Filter>Source Files\C程序设计进阶_期末考试</Filter>
     </ClCompile>
-    <ClCompile Include="C_期末_5 走出迷宫v2 考虑要点6.cpp">
+    <ClCompile Include="C_期末_5 走出迷宫dev 考虑要点6和7%28未成功%29.cpp">
       <Filter>Source Files\C程序设计进阶_期末考试</Filter>
     </ClCompile>
-    <ClCompile Include="C_期末_5 走出迷宫v3(解法2，BFS，非递归，正向求解).cpp">
+    <ClCompile Include="C_期末_5 走出迷宫v1 考虑要点7%28成功，速度最慢%29.cpp">
+      <Filter>Source Files\C程序设计进阶_期末考试</Filter>
+    </ClCompile>
+    <ClCompile Include="C_期末_5 走出迷宫v3%28解法2，BFS，非递归，正向求解%29%28成功，速度最快%29.cpp">
       <Filter>Source Files\C程序设计进阶_期末考试</Filter>
     </ClCompile>
   </ItemGroup>

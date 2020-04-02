@@ -9,6 +9,9 @@
 7.优化性能2：如果当前走的路线将要超过已知的最短路线步数，则停止
 */
 
+/*C_期末_5 走出迷宫v2.1 取消了v2递归函数中的p_temp(成功，速度一般，占用内存小于v2)*/
+/*问题：调用大数组，例如56*56时，会堆栈溢出，因为会调用太多次的递归*/
+
 #include <iostream>
 #include <stdio.h>
 #include <stdlib.h>
@@ -36,81 +39,70 @@ int min(int a, int b) {
 int recursion(char* p[], int r, int c) {//p表示当前迷宫；r,c表示这次的位置，r为行，c为列，对应要点2
 	int steps_left = -1, steps_up = -1, steps_right = -1, steps_down = -1;//分别表示左上右下各自移动的步数，取最小值返回，至少为1。对应要点3
 	int min(int a, int b);//声明函数
-	
-
-	char** p_temp = new char* [n];//生成一个新的迷宫，该迷宫把走过的路设为墙壁，防止走回头路，对应要点1
-	for (int i = 0; i < n; i++) {
-		p_temp[i] = new char[m];
-	}
-	for (int i = 0; i < n; i++) {
-		for (int j = 0; j < m; j++) {
-			p_temp[i][j] = p[i][j];
-		}
-	}
-	p_temp[r][c] = '#';//新迷宫把当前所处的位置变成墙壁，对应要点1
+	p[r][c] = '#';//新迷宫把当前所处的位置变成墙壁，对应要点1
 
 	if (c > 0 && p[r][c - 1] != '#') {//进行左移，前提是不在边界以及不碰墙壁。对应要求中的1，4和5
 		if (p[r][c - 1] == 'T') {//到达终点
-			steps_left= 1;
+			steps_left = 1;
 		}
 		else if (p_steps[r][c - 1] != -1) {//如果不等于-1，说明之前已经有其他路线计算过该点到终点的最短距离。注意，即使之前有计算过并且得到p_steps[r][c-1]=-1，也不能够拿来用，需要重新计算一遍，因为-1是无效的
 			steps_left = p_steps[r][c - 1];
 			//if (steps_left != -1)//如果值是-1，说明之前已经计算过是死路，故不考虑该路线，应当返回-1。这句话是错的，即使之前已经计算过是-1，也要重新计算该点，因为-1表示无效
-				steps_left++;//当前递归左移了一步，进行记录
+			steps_left++;//当前递归左移了一步，进行记录
 		}
 		else {
-			steps_left = recursion(p_temp, r, c - 1);
+			steps_left = recursion(p, r, c - 1);//注意调用时会改变p迷宫的状态
 			if (steps_left != -1)//如果返回值是-1，说明前面是死路，故不考虑该路线，应当返回-1
 				steps_left++;//当前递归左移了一步，进行记录
+			p[r][c - 1] = '.';//在用完之后要撤销之前的操作，防止后面3种移动时的情况与左移的情况不同。这样写可以少用一个数组来保存当前迷宫的状态
 		}
 	}
 	if (r > 0 && p[r - 1][c] != '#') {//上移
 		if (p[r - 1][c] == 'T') {
-			steps_up= 1;
+			steps_up = 1;
 		}
 		else if (p_steps[r - 1][c] != -1) {
 			steps_up = p_steps[r - 1][c];
 			steps_up++;
 		}
 		else {
-			steps_up = recursion(p_temp, r - 1, c);
+			steps_up = recursion(p, r - 1, c);
 			if (steps_up != -1)
 				steps_up++;
+			p[r - 1][c] = '.';
 		}
 	}
 	if (c < m - 1 && p[r][c + 1] != '#') {//右移
 		if (p[r][c + 1] == 'T') {
-			steps_right= 1;
+			steps_right = 1;
 		}
 		else if (p_steps[r][c + 1] != -1) {
 			steps_right = p_steps[r][c + 1];
 			steps_right++;
 		}
 		else {
-			steps_right = recursion(p_temp, r, c + 1);
+			steps_right = recursion(p, r, c + 1);
 			if (steps_right != -1)
 				steps_right++;
+			p[r][c + 1] = '.';
 		}
 	}
 	if (r < n - 1 && p[r + 1][c] != '#') {//下移
 		if (p[r + 1][c] == 'T') {
-			steps_down= 1;
+			steps_down = 1;
 		}
 		else if (p_steps[r + 1][c] != -1) {
 			steps_down = p_steps[r + 1][c];
 			steps_down++;
 		}
 		else {
-			steps_down = recursion(p_temp, r + 1, c);
+			steps_down = recursion(p, r + 1, c);
 			if (steps_down != -1)
 				steps_down++;
+			p[r + 1][c] = '.';
 		}
 	}
 
-	for (int i = 0; i < n; i++) {//新迷宫释放内存
-		delete[]p_temp[i];
-	}
-	delete[]p_temp;
 	p_steps[r][c] = min(min(min(steps_left, steps_up), steps_right), steps_down);//求4个当中的最小值，不对-1进行比较。如果返回值是-1，表示有4个面是墙壁'#'或者边界（包括后来新生成的墙壁）
 	return p_steps[r][c];
 }

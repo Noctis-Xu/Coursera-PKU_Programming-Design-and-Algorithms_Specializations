@@ -9,6 +9,8 @@
 7.优化性能2：如果当前走的路线将要超过已知的最短路线步数，则停止
 */
 
+/*问题：速度太慢，稍微大一点的数组就要等待很长时间*/
+
 #include <iostream>
 #include <stdio.h>
 #include <stdlib.h>
