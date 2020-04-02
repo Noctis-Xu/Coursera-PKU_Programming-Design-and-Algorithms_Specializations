@@ -105,5 +105,8 @@
     <ClCompile Include="C_期末_5 走出迷宫v2 考虑要点6.cpp">
       <Filter>Source Files\C程序设计进阶_期末考试</Filter>
     </ClCompile>
+    <ClCompile Include="C_期末_5 解法2 正向解法BFS.cpp">
+      <Filter>Source Files\C程序设计进阶_期末考试</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
