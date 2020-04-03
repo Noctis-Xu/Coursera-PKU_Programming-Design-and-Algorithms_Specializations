@@ -28,6 +28,12 @@
     <Filter Include="Source Files\C程序设计进阶_期末考试">
       <UniqueIdentifier>{dfade9b2-b70f-4a0e-8103-3467c9b9684c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\C++程序设计_第2周C++初探">
+      <UniqueIdentifier>{72d34c1b-77de-4111-bd87-a894d0cecfcc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\C++程序设计_第3周类和对象">
+      <UniqueIdentifier>{bc3bb847-6dd5-43e3-8b15-2d3b2731e4ed}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Calendar.cpp">
@@ -110,6 +116,12 @@
     </ClCompile>
     <ClCompile Include="C_期末_5 走出迷宫v3%28解法2，BFS，非递归，正向求解%29%28成功，速度最快%29.cpp">
       <Filter>Source Files\C程序设计进阶_期末考试</Filter>
+    </ClCompile>
+    <ClCompile Include="C++_2_1 简单的学生信息处理程序实现.cpp">
+      <Filter>Source Files\C++程序设计_第2周C++初探</Filter>
+    </ClCompile>
+    <ClCompile Include="C++_3_1.cpp">
+      <Filter>Source Files\C++程序设计_第3周类和对象</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

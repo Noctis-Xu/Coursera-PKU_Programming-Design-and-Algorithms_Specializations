@@ -15,6 +15,7 @@
 #include <iostream>
 #include <stdio.h>
 #include <stdlib.h>
+//#include "time.h"
 
 using namespace std;
 int n, m;//ÃÔ¹¬nÐÐmÁÐ
@@ -111,14 +112,12 @@ int recursion(char* p[], int r, int c) {//p±íÊ¾µ±Ç°ÃÔ¹¬£»r,c±íÊ¾Õâ´ÎµÄÎ»ÖÃ£¬rÎªÐ
 
 int main() {
 	cin >> n >> m;
-
 	char** p = new char* [n];
 	p_steps = new int* [n];
 	for (int i = 0; i < n; i++) {
 		p[i] = new char[m];
 		p_steps[i] = new int[m];
 	}
-
 	int S_n, S_m;//Èë¿ÚµÄÐÐºÍÁÐ
 	for (int i = 0; i < n; i++) {
 		for (int j = 0; j < m; j++) {
@@ -130,6 +129,9 @@ int main() {
 			}
 		}
 	}
+
+	//clock_t start_time, end_time;
+	//start_time = clock();   //»ñÈ¡¿ªÊ¼Ö´ÐÐÊ±¼ä
 
 	int shortest_steps_back;
 	shortest_steps_back = recursion(p, S_n, S_m);
@@ -145,5 +147,10 @@ int main() {
 	}
 	delete[]p;
 	delete[]p_steps;
+
+	//end_time = clock();     //»ñÈ¡½áÊøÊ±¼ä
+	//double Times = (double)(end_time - start_time) / CLOCKS_PER_SEC;
+	//printf("%f seconds\n", Times);
+
 	return 0;
 }

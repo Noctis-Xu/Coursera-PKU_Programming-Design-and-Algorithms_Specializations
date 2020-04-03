@@ -15,6 +15,7 @@
 #include <iostream>
 #include <stdio.h>
 #include <stdlib.h>
+//#include "time.h"//测试运行时间
 
 #define p_ready_amount 200
 
@@ -42,6 +43,9 @@ int main() {
 			}
 		}
 	}
+
+	//clock_t start_time, end_time;
+	//start_time = clock();   //获取开始执行时间
 
 	p_ready[0].r = S_n;
 	p_ready[0].c = S_m;
@@ -113,9 +117,15 @@ int main() {
 
 	cout << steps << endl;
 
+
 	for (int i = 0; i < n; i++) {
 		delete[]p[i];
 	}
 	delete[]p;
+
+	//end_time = clock();     //获取结束时间
+	//double Times = (double)(end_time - start_time) / CLOCKS_PER_SEC;
+	//printf("%f seconds\n", Times);
+
 	return 0;
 }
