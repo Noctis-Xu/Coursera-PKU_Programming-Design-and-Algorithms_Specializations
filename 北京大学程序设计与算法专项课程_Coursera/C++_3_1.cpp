@@ -1,13 +1,36 @@
+/*
+输入
+无
+
+输出
+0
+5
+*/
+/*提交代码时只提交
+A(int n = 0) { val = n; }
+int& GetObj() {
+    return val;
+}
+*/
 #include <iostream>
+#include <string.h>
+#include <stdio.h>
+#include <stdlib.h>
+
 using namespace std;
 class A {
 public:
     int val;
-    // 在此处补充你的代码
+    A(int n=0) { val = n; }
+    int & GetObj() {
+        return val;
+    }
 };
-main() {
+
+int main() {
     A a;
-    cout << a.val << endl;
-    a.GetObj() = 5;
-    cout << a.val << endl;
+    cout << a.val << endl;//输出0
+    a.GetObj() = 5;//这里修改a.val的值为5
+    cout << a.val << endl;//输出5
+    return 0;
 }
