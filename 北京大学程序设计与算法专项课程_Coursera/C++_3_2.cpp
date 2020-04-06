@@ -16,7 +16,9 @@ class Sample {
 public:
     int v;
     Sample(int n) :v(n) { }
-    // 在此处补充你的代码
+    Sample(const Sample& a) {
+        v=10;
+    }
 };
 int main() {
     Sample a(5);
