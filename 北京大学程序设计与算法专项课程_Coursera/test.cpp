@@ -21,8 +21,9 @@ A Func() {
 	return b;
 };
 int main() {
-
-	cout << Func().v << endl;
-	return 0;
-
+	enum species {
+		dragon=1,ninja=3,iceman=0,lion=6,wolf=5
+	}a;
+	a = dragon;
+	printf("%s\n", a);
 }
