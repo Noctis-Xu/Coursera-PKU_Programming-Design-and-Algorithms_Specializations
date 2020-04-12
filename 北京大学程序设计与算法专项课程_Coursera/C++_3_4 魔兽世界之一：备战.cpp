@@ -2,22 +2,27 @@
 #include <string.h>
 
 using namespace std;
+enum SPECIES { dragon = 0, ninja, iceman, lion, wolf };
 
 class Warrior {
 private:
-	char Species[10]; //0:dragon、1:ninja、2:iceman、3:lion、4:wolf
+	//char Species[10]; //0:dragon、1:ninja、2:iceman、3:lion、4:wolf
+	SPECIES Species; //0:dragon、1:ninja、2:iceman、3:lion、4:wolf
 	int No;
 	int Strength;
 	int Attack = 0;
 	friend class Headquarter;
 public:
-	Warrior(char* str, int no, int strength) :Strength(strength), No(no) {
-		strcpy(Species, str);
+	Warrior(SPECIES species, int no, int strength) :Species(species), No(no), Strength(strength), {
+		//strcpy(species, str);
 	}
 };
 
 class Headquarter {
 private:
+	struct {
+		SPECIES species;
+	}warrior_count;
 	int warrior_count[5] = { 0 };//0:dragon、1:ninja、2:iceman、3:lion、4:wolf
 	int HP;
 	char Name[10];
@@ -41,7 +46,6 @@ int main() {
 	int cases, hp;
 	char str_red[10] = "red";
 	char str_blue[10] = "blue";
-	enum Species {}species;
 	cin >> cases;
 
 	for (int c = 1; c <= cases; c++) {
