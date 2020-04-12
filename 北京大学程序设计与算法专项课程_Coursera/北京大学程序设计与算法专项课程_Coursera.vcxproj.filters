@@ -129,7 +129,10 @@
     <ClCompile Include="C++_3_3.cpp">
       <Filter>Source Files\C++程序设计_第3周类和对象</Filter>
     </ClCompile>
-    <ClCompile Include="C++_3_4 魔兽世界之一：备战.cpp">
+    <ClCompile Include="C++_3_4 魔兽世界之一：备战v1.0.cpp">
+      <Filter>Source Files\C++程序设计_第3周类和对象</Filter>
+    </ClCompile>
+    <ClCompile Include="C++_3_4 魔兽世界之一：备战v1.1.cpp">
       <Filter>Source Files\C++程序设计_第3周类和对象</Filter>
     </ClCompile>
   </ItemGroup>
