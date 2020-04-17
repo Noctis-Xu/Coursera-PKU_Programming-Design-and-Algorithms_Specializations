@@ -1,4 +1,4 @@
-/*还有方法是把不同种类士兵的需要消耗的cost作为参数传入Headquater.warrior_count[5]，
+/*把不同种类士兵的需要消耗的cost作为参数传入Headquater.warrior_count[5]，
 不同的Headquater传入cost的顺序不一样，以此来代表不同Headquater产生士兵的顺序不同
 比如：
 cost: dragon = 1, ninja=2, iceman=3, lion=4, wolf=5

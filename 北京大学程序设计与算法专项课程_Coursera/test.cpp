@@ -21,9 +21,8 @@ A Func() {
 	return b;
 };
 int main() {
-	A c(4);
-	A* p = new A(4);
-	
-	cout << p->v << endl;
-	//delete p;
+	A test1(5);
+	int a = 1, b = 2, c = 3;
+	a = b = c;
+	cout << &test1.v << endl << &test1 << endl;
 }
