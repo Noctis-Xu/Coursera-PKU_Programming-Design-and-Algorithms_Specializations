@@ -34,6 +34,9 @@
     <Filter Include="Source Files\C++程序设计_第3周类和对象">
       <UniqueIdentifier>{bc3bb847-6dd5-43e3-8b15-2d3b2731e4ed}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\C++程序设计_第4周运算符重载">
+      <UniqueIdentifier>{fa331791-81c9-4cfd-8ec6-aa9685d78019}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Calendar.cpp">
@@ -135,8 +138,14 @@
     <ClCompile Include="C++_3_4 魔兽世界之一：备战v1.1.cpp">
       <Filter>Source Files\C++程序设计_第3周类和对象</Filter>
     </ClCompile>
-    <ClCompile Include="Source.cpp">
-      <Filter>Source Files\C++程序设计_第3周类和对象</Filter>
+    <ClCompile Include="C++_4_1.cpp">
+      <Filter>Source Files\C++程序设计_第4周运算符重载</Filter>
+    </ClCompile>
+    <ClCompile Include="C++_4_2.cpp">
+      <Filter>Source Files\C++程序设计_第4周运算符重载</Filter>
+    </ClCompile>
+    <ClCompile Include="C++_4_3.cpp">
+      <Filter>Source Files\C++程序设计_第4周运算符重载</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
