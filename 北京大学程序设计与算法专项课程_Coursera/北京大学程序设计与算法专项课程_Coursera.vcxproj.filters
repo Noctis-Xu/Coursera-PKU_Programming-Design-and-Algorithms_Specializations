@@ -144,7 +144,13 @@
     <ClCompile Include="C++_4_2.cpp">
       <Filter>Source Files\C++程序设计_第4周运算符重载</Filter>
     </ClCompile>
-    <ClCompile Include="C++_4_3.cpp">
+    <ClCompile Include="C++_4_4 大整数的加减乘除.cpp">
+      <Filter>Source Files\C++程序设计_第4周运算符重载</Filter>
+    </ClCompile>
+    <ClCompile Include="C++_4_3 v1.0.cpp">
+      <Filter>Source Files\C++程序设计_第4周运算符重载</Filter>
+    </ClCompile>
+    <ClCompile Include="C++_4_3 v2.0.cpp">
       <Filter>Source Files\C++程序设计_第4周运算符重载</Filter>
     </ClCompile>
   </ItemGroup>

@@ -4,7 +4,8 @@
 #include <stdlib.h>
 //#include <cstdio>
 //#include <cstdlib>
-#include <string.h>
+//#include <string.h>
+#include <cstring>
 
 using namespace std;
 class A {
@@ -38,24 +39,10 @@ public:
 MyClass MyClass::object;
 
 int main() {
-	/*A *p=new A(5);
-	delete p;
-	cout << MyClass::object.object.object.str<<endl;
-	cout<<sizeof(foo)<<endl;
-	cout << sizeof(MyClass::object.object) << endl;*/
-
-	int* p = new int[3, 4];
-	p[0, 0] = 1;
-	p[0, 1] = 2;
-	p[0, 2] = 3;
-	p[0, 3] = 4;
-	p[1,0] = 5;
-	
-	cout << p[0, 0] << endl << p[0, 1] << endl;
-	//cout << p[1, 0] << endl;
-	cout << p[4] << endl;
-	delete[] p;
+	char s[] = "1234567890";
+	char* p1 = s;
+	char* p2 = s + 2;
+	memcpy(p1, p2, 5);
+	cout << p1 << endl;
 	return 0;
-
-	
 }
