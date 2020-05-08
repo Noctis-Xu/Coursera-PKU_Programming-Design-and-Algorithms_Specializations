@@ -39,10 +39,17 @@ public:
 MyClass MyClass::object;
 
 int main() {
-	char s[] = "1234567890";
-	char* p1 = s;
+	char s[50] = "1234567890";
+	/*char* p1 = s;
 	char* p2 = s + 2;
 	memcpy(p1, p2, 5);
 	cout << p1 << endl;
+	_strrev(s);
+	cout << s<<endl;
+	cout << strlen(s) << endl;*/
+	char s2[50] = { 'a' };
+	strcpy(&s2[1], &s[10]);
+	cout << s2;
+
 	return 0;
 }
