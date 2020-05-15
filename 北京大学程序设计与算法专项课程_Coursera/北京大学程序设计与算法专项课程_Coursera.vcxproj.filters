@@ -153,5 +153,11 @@
     <ClCompile Include="C++_4_3 v2.0.cpp">
       <Filter>Source Files\C++程序设计_第4周运算符重载</Filter>
     </ClCompile>
+    <ClCompile Include="别人的大整数乘法_验证用.cpp">
+      <Filter>Source Files\C++程序设计_第4周运算符重载</Filter>
+    </ClCompile>
+    <ClCompile Include="C++_4_4 大整数的加减乘除v1.1.cpp">
+      <Filter>Source Files\C++程序设计_第4周运算符重载</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

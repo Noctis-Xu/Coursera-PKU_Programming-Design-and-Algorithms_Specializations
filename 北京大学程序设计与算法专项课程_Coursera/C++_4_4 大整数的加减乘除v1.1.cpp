@@ -1,3 +1,5 @@
+//v1.1版本编写了自己的strrev
+
 /*
 描述
 给出两个正整数以及四则运算操作符（+ - * /），求运算结果。
@@ -34,6 +36,17 @@
 #include <string.h>
 using namespace std;
 
+char* strrev_(char* s)
+{
+	if (s == NULL || s[0] == '\0')
+		return s;
+
+	for (char t, *p = s, *q = s + strlen(s) - 1; p < q; p++, q--)
+		t = *p, * p = *q, * q = t;
+
+	return s;
+}
+
 class BigInt {
 public:
 	char integer[201] = { '\0' };
@@ -50,7 +63,7 @@ public:
 		strcpy(this->integer, a.integer);
 	}
 	//BigInt(const int a) {//复制构造函数，用来初始化语句
-	//	_itoa(a, this->integer, 10);
+	//	itoa(a, this->integer, 10);
 	//}
 
 };
@@ -60,7 +73,7 @@ BigInt BigInt::operator+(const BigInt& b) {//考虑一种情况，99999+9，会不断进位
 	char a_temp[201], b_temp[201];
 	char* p_big, * p_small;//p_big指向位数多的整数,p_small指向位数少的整数
 	strcpy(a_temp, this->integer); strcpy(b_temp, b.integer);
-	_strrev(a_temp); _strrev(b_temp);
+	strrev_(a_temp); strrev_(b_temp);
 	int a_size, b_size, size_small, size_big;
 	a_size = strlen(a_temp); b_size = strlen(b_temp);
 	if (a_size >= b_size) { p_big = a_temp, p_small = b_temp; size_big = a_size; size_small = b_size; }
@@ -89,7 +102,7 @@ BigInt BigInt::operator+(const BigInt& b) {//考虑一种情况，99999+9，会不断进位
 			carry = int(temp_int / 10);//进位
 		}
 	}
-	_strrev(c.integer);
+	strrev_(c.integer);
 	return c;
 }
 
@@ -124,7 +137,7 @@ BigInt BigInt::operator-(const BigInt& b) {//这里不包括负整数的减法，所以-12313-
 	}
 
 	//模拟减法过程
-	_strrev(a_temp); _strrev(b_temp);//翻转，字符串从左到右为个位数，十位数，百位数...
+	strrev_(a_temp); strrev_(b_temp);//翻转，字符串从左到右为个位数，十位数，百位数...
 	int borrow = 0;//借位，只可能为0或1
 	for (int i = 0; i < size_big; i++) {//结果不会超过最大的数
 		if (i < size_small) {
@@ -156,7 +169,7 @@ BigInt BigInt::operator-(const BigInt& b) {//这里不包括负整数的减法，所以-12313-
 		}
 	}
 
-	_strrev(c.integer);
+	strrev_(c.integer);
 	return c;
 }
 
@@ -208,7 +221,7 @@ BigInt BigInt::operator*(const BigInt& b) {
 	BigInt c;
 	char a_temp[201], b_temp[201];
 	strcpy(a_temp, this->integer); strcpy(b_temp, b.integer);
-	_strrev(a_temp); _strrev(b_temp);
+	strrev_(a_temp); strrev_(b_temp);
 	int a_size, b_size, size_small, size_big;
 	char* p_big, * p_small;//p_big指向位数多的整数,p_small指向位数少的整数
 	a_size = strlen(a_temp); b_size = strlen(b_temp);
@@ -220,7 +233,7 @@ BigInt BigInt::operator*(const BigInt& b) {
 	for (int i = 0; i < size_small; i++) {//大数放上面，小数放下面，乘的次数即为小数的位数，相加的次数也是小数的位数
 		BigInt d;
 		OneDigitMultiply(p_big, p_small[i], d.integer);
-		_strrev(d.integer);//从左到右为从高位到低位
+		strrev_(d.integer);//从左到右为从高位到低位
 		int size_d = strlen(d.integer);
 		if (d.integer[0] != '0') {
 			for (int j = 0; j < i; j++) {//低位最后补0,i=0在最后补0个0，i=1补1个0，i=2补2个0
@@ -265,7 +278,7 @@ BigInt BigInt::operator/(const BigInt& b) {//除法结果最大为100位
 		if (c.integer[0] == '\0') {//如果第一次调用该函数时就执行了该语句，则说明被除数小于除数，比如1/20，则c=0
 			c.integer[0] = '0';
 		}
-		_strrev(c.integer);
+		strrev_(c.integer);
 		return c;
 	}
 	else {
