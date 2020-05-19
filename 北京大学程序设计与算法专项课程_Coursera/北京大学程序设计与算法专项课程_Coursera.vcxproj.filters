@@ -37,6 +37,9 @@
     <Filter Include="Source Files\C++程序设计_第4周运算符重载">
       <UniqueIdentifier>{fa331791-81c9-4cfd-8ec6-aa9685d78019}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\C++程序设计_第5周继承与派生">
+      <UniqueIdentifier>{9c7c59fa-cd48-49e9-8e1e-0a4599d2cc48}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Calendar.cpp">
@@ -158,6 +161,12 @@
     </ClCompile>
     <ClCompile Include="C++_4_4 大整数的加减乘除v1.1.cpp">
       <Filter>Source Files\C++程序设计_第4周运算符重载</Filter>
+    </ClCompile>
+    <ClCompile Include="C++_5_1 写一个MyString类.cpp">
+      <Filter>Source Files\C++程序设计_第5周继承与派生</Filter>
+    </ClCompile>
+    <ClCompile Include="C++_5_2 魔兽世界之二：装备.cpp">
+      <Filter>Source Files\C++程序设计_第5周继承与派生</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
