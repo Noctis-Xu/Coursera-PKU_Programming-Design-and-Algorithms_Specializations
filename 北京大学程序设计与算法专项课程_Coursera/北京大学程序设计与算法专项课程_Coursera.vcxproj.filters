@@ -40,6 +40,12 @@
     <Filter Include="Source Files\C++程序设计_第5周继承与派生">
       <UniqueIdentifier>{9c7c59fa-cd48-49e9-8e1e-0a4599d2cc48}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\C++程序设计_第6周多态与虚函数">
+      <UniqueIdentifier>{b9698b31-570d-461c-abca-9dbc9be2a89e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\C++程序设计_第7周文件操作与模板">
+      <UniqueIdentifier>{9c678447-2823-4ba3-adb3-ca7b1ea2911c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Calendar.cpp">
@@ -167,6 +173,36 @@
     </ClCompile>
     <ClCompile Include="C++_5_2 魔兽世界之二：装备.cpp">
       <Filter>Source Files\C++程序设计_第5周继承与派生</Filter>
+    </ClCompile>
+    <ClCompile Include="C++_6_1 输出Fun Do.cpp">
+      <Filter>Source Files\C++程序设计_第6周多态与虚函数</Filter>
+    </ClCompile>
+    <ClCompile Include="C++_6_2 destructor.cpp">
+      <Filter>Source Files\C++程序设计_第6周多态与虚函数</Filter>
+    </ClCompile>
+    <ClCompile Include="C++_6_3.cpp">
+      <Filter>Source Files\C++程序设计_第6周多态与虚函数</Filter>
+    </ClCompile>
+    <ClCompile Include="C++_6_4 魔兽世界终极版.cpp">
+      <Filter>Source Files\C++程序设计_第6周多态与虚函数</Filter>
+    </ClCompile>
+    <ClCompile Include="程序设计与算法（三）第06周001_看上去像多态.cpp">
+      <Filter>Source Files\C++程序设计_第6周多态与虚函数</Filter>
+    </ClCompile>
+    <ClCompile Include="程序设计与算法（三）第06周002_Fun和Do.cpp">
+      <Filter>Source Files\C++程序设计_第6周多态与虚函数</Filter>
+    </ClCompile>
+    <ClCompile Include="程序设计与算法（三）第06周003_这是什么鬼delete.cpp">
+      <Filter>Source Files\C++程序设计_第6周多态与虚函数</Filter>
+    </ClCompile>
+    <ClCompile Include="程序设计与算法（三）第06周004_怎么又是Fun和Do.cpp">
+      <Filter>Source Files\C++程序设计_第6周多态与虚函数</Filter>
+    </ClCompile>
+    <ClCompile Include="程序设计与算法（三）第07周001_简单的SumArray.cpp">
+      <Filter>Source Files\C++程序设计_第7周文件操作与模板</Filter>
+    </ClCompile>
+    <ClCompile Include="程序设计与算法（三）第07周002_简单的foreach.cpp">
+      <Filter>Source Files\C++程序设计_第7周文件操作与模板</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
