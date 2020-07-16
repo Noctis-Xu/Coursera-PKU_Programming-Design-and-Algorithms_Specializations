@@ -46,6 +46,9 @@
     <Filter Include="Source Files\C++程序设计_第7周文件操作与模板">
       <UniqueIdentifier>{9c678447-2823-4ba3-adb3-ca7b1ea2911c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\C++程序设计_第8周标准模板库STL">
+      <UniqueIdentifier>{f2fde491-d278-4f4a-b0cd-105321068796}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Calendar.cpp">
@@ -203,6 +206,33 @@
     </ClCompile>
     <ClCompile Include="程序设计与算法（三）第07周002_简单的foreach.cpp">
       <Filter>Source Files\C++程序设计_第7周文件操作与模板</Filter>
+    </ClCompile>
+    <ClCompile Include="程序设计与算法（三）第07周003_简单的Filter.cpp">
+      <Filter>Source Files\C++程序设计_第7周文件操作与模板</Filter>
+    </ClCompile>
+    <ClCompile Include="程序设计与算法（三）第07周004_你真的搞清楚为啥while(cin)能成立了吗.cpp">
+      <Filter>Source Files\C++程序设计_第7周文件操作与模板</Filter>
+    </ClCompile>
+    <ClCompile Include="程序设计与算法（三）第07周005_山寨版istream_iterator.cpp">
+      <Filter>Source Files\C++程序设计_第7周文件操作与模板</Filter>
+    </ClCompile>
+    <ClCompile Include="程序设计与算法（三）第07周006_这个模板并不难cpp.cpp">
+      <Filter>Source Files\C++程序设计_第7周文件操作与模板</Filter>
+    </ClCompile>
+    <ClCompile Include="程序设计与算法（三）第07周007_排序，又见排序!.cpp">
+      <Filter>Source Files\C++程序设计_第7周文件操作与模板</Filter>
+    </ClCompile>
+    <ClCompile Include="程序设计与算法（三）第08周001_goodcopy.cpp">
+      <Filter>Source Files\C++程序设计_第8周标准模板库STL</Filter>
+    </ClCompile>
+    <ClCompile Include="C++_8_1 STL填空.cpp">
+      <Filter>Source Files\C++程序设计_第8周标准模板库STL</Filter>
+    </ClCompile>
+    <ClCompile Include="C++_8_1 List.cpp">
+      <Filter>Source Files\C++程序设计_第8周标准模板库STL</Filter>
+    </ClCompile>
+    <ClCompile Include="C++_8_1 List法2-hash_map.cpp">
+      <Filter>Source Files\C++程序设计_第8周标准模板库STL</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
