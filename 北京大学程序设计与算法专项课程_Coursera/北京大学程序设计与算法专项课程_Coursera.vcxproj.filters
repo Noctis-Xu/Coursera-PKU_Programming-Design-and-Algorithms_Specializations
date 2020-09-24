@@ -234,5 +234,20 @@
     <ClCompile Include="C++_8_1 List法2-hash_map.cpp">
       <Filter>Source Files\C++程序设计_第8周标准模板库STL</Filter>
     </ClCompile>
+    <ClCompile Include="InsertionSort_MergeSort_class.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="InsertionSort_MergeSort.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="test2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BinarySearch-verA_AverageCostTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BinarySearch-verB.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

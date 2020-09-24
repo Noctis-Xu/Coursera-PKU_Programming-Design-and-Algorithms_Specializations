@@ -2,7 +2,7 @@
 #include <iostream>
 #include <stdio.h>
 #include <stdlib.h>
-#include<string>
+#include <string>
 //#include <cstdio>
 //#include <cstdlib>
 //#include <string.h>
